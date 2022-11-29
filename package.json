@@ -1,0 +1,27 @@
+{
+  "name": "note-app-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch": "nodemon NODE_ENV=dev ./main.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" || NODE_ENV=test && mocha ./server/tests/**/*.test.js --timeout 4000 --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "joi": "^17.7.0",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.8"
+  },
+  "devDependencies": {
+    "expect": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.1"
+  }
+}

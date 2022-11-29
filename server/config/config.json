@@ -1,0 +1,20 @@
+{
+  "test": {
+    "PORT": 3001,
+    "JWT_SECRET": "drrfqewefefpwel;em,c;cml;,poewfipj30_)(I(wkljk",
+    "DB": "note-db-test",
+    "DB_PORT": 3306,
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": "12345678",
+    "DB_HOST": "localhost"
+  },
+  "dev": {
+    "PORT": 3000,
+    "JWT_SECRET": "BaGpsukc3nKvWnoz9AEXQWrYMM3vJ2WQtV9x5KHgcDwnhAQprVL",
+    "DB": "note-db-dev",
+    "DB_PORT": 3306,
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": "12345678",
+    "DB_HOST": "localhost"
+  }
+}
