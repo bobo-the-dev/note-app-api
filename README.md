@@ -15,7 +15,7 @@
 - [Sequelize](https://sequelize.org/) - v6.25.8
 
 
-## Installation (via Angular CLI)
+## Installation (via Node.JS)
 
 Requires (mandatory)
 - [Node.js](https://nodejs.org/)
