@@ -20,6 +20,9 @@ jobs:
       - run:
           name: "Install dependencies"
           command: "npm install"
+      - run:
+          name: "Install dev dependencies"
+          command: "npm install --only=dev"
       - save_cache:
           key: v1-dependencies-{{ checksum "package-lock.json" }}
           paths:
