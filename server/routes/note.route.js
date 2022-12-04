@@ -53,7 +53,7 @@ router.patch(
       const { id, title, content } = req.body;
       const note = await Note.findOne({ where: { id } });
       if (!note) {
-        throw new Error(`Note id:${id} note found!`);
+        throw new Error(`Note id:${id} not found!`);
       }
       note.title = title;
       note.content = content;
@@ -80,7 +80,7 @@ router.get(
       if (!note) {
         return res.status(400).send({
           code: 400,
-          message: `Note id:${id} note found!`,
+          message: `Note id:${id} not found!`,
         });
       }
       res.status(200).send({
@@ -105,7 +105,7 @@ router.delete(
       if (!note) {
         return res.status(400).send({
           code: 400,
-          message: `Note id:${id} note found!`,
+          message: `Note id:${id} not found!`,
         });
       }
       note.destroy();
