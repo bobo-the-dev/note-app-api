@@ -4,7 +4,9 @@ const { Note } = require("../models");
 
 router.get("/", async function (req, res) {
   try {
-    const notes = await Note.findAll();
+    const notes = await Note.findAll({
+      order: [["updatedAt", "DESC"]],
+    });
     res.json({
       result: notes,
     });
