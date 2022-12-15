@@ -3,6 +3,8 @@
 
 [![CircleCI](https://circleci.com/gh/bobo-the-dev/note-app-api.svg?style=shield)](https://github.com/bobo-the-dev/note-app-api)
 
+# [🚀Live Version is Here](https://bobo-the-dev.com/)
+
 ## Features
 
 - CRUD The Note
@@ -51,6 +53,12 @@ Verify the app by navigate to
 ```sh
 localhost:3000
 ```
+
+## Running unit tests
+
+Run `npm run test` to execute the unit tests via [Mocha](https://mochajs.org/).
+
+
 ## License
 
 MIT
