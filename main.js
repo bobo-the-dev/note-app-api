@@ -5,7 +5,7 @@ const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 const helmet = require("helmet");
-
+const compression = require("compression");
 const app = express();
 app.use(helmet());
 // Extract HTTP body data to req.body
@@ -18,6 +18,9 @@ app.use(
     exposedHeaders: ["x-auth"],
   })
 );
+
+// compress responses
+app.use(compression());
 
 app.use("/api", require("./server/routes"));
 
